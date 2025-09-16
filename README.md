@@ -1,31 +1,121 @@
-# FUTURE_DS_03
-ollege Event Feedback Analysis
-Project Overview
-This project, part of the Future Interns 🎓 program, focuses on analyzing student feedback from college events to derive actionable insights and improve campus life. Using data science tools, we process feedback data (ratings and potentially comments) to understand student satisfaction and identify areas for enhancement in future events.
+🎓 College Event Feedback Analysis
+📌 Overview
 
-What's Inside
-This repository contains a Google Colab notebook (.ipynb file) that performs the following analysis:
+This project, part of the Future Interns program, focuses on analyzing student feedback from college courses and events to derive actionable insights and improve campus life.
 
-Data Loading and Preparation: Loading student feedback data (simulated Google Forms export) using pandas.
-Descriptive Statistics: Generating summary statistics for the feedback ratings.
-Visualization of Ratings: Creating various charts (bar charts, histograms, box plots, heatmaps) to visualize the distribution, averages, spread, and correlations of student ratings across different feedback aspects.
-Identification of Key Insights: Analyzing the visualizations and statistics to pinpoint areas of strength and weakness based on student feedback.
-Recommendations for Improvement: Providing concrete suggestions for event organizers based on the analytical findings.
-(Note: This analysis was performed on a dataset with ratings on a 1-10 scale. Sentiment analysis using NLP tools like TextBlob or VADER and analysis of 1-5 scale ratings would require datasets containing student comments and/or ratings in that format, which were not available for this specific analysis.)
+The analysis combines quantitative ratings (1–5 scale) with qualitative text sentiment (optional comments) to evaluate student satisfaction and highlight areas for improvement.
 
-Skills Demonstrated
-Data cleaning & preparation with pandas
-Creating bar charts, histograms, box plots, and heatmaps for reports using matplotlib and seaborn
-Interpreting survey data to help make real decisions
-Working in Google Colab
-How to View and Use
-Clone or download this repository to your local machine.
-Open the .ipynb file in Google Colab.
-Run the cells sequentially to reproduce the analysis and visualizations.
-Example Insights
-Based on the analysis in the notebook, you can find insights such as:
+🛠 Tech Stack
 
-Average satisfaction scores for different aspects of the event.
-Distribution of overall satisfaction among students.
-Spread and consistency of ratings for various feedback criteria.
-Correlation (or lack thereof) between different feedback aspects.
+Google Colab → Online notebook (no setup required)
+
+pandas → Data cleaning & preparation
+
+matplotlib / seaborn → Data visualization
+
+NLTK (VADER) → Sentiment analysis of comments
+
+📂 Dataset
+
+The dataset comes from a Google Forms export containing student ratings across multiple aspects:
+
+Well versed with the subject
+
+Explains concepts clearly
+
+Use of presentations
+
+Difficulty of assignments
+
+Solves doubts willingly
+
+Structuring of the course
+
+Provides support beyond syllabus
+
+Course recommendation relevance
+
+Overall Score
+
+👉 An additional Comments column was added (simulated) to demonstrate text sentiment analysis.
+
+🚀 Project Workflow
+
+Data Preparation
+
+Load CSV in Colab
+
+Clean column names & handle missing values
+
+Descriptive Statistics
+
+Mean, median, and distribution of ratings
+
+Visualizations
+
+📊 Bar charts → Average rating per question
+
+🥧 Pie chart → Distribution of overall satisfaction
+
+🔥 Heatmap → Correlation between survey questions
+
+Sentiment Analysis (Optional)
+
+VADER applied to text comments
+
+Sentiment categories: Positive, Neutral, Negative
+
+Sentiment distribution visualized
+
+Insights & Recommendations
+
+Strengths: e.g., “Solves doubts willingly” rated highest
+
+Weaknesses: “Difficulty of assignments” rated lowest
+
+Recommendations: simplify assignments, more practice sessions, continue strong presentation usage
+
+📊 Example Outputs
+
+Bar Chart – Average ratings across feedback aspects
+
+Pie Chart – Overall satisfaction distribution
+
+Heatmap – Correlation between feedback items
+
+Count Plot – Sentiment distribution from comments
+
+📁 Repository Contents
+
+notebooks/College_Event_Feedback_Analysis.ipynb → Main Google Colab notebook
+
+data/student_feedback.csv → Raw dataset
+
+data/student_feedback_analyzed.csv → Processed dataset
+
+README.md → Project documentation
+
+🧠 Skills Demonstrated
+
+Data wrangling & cleaning with pandas
+
+Visual storytelling with matplotlib / seaborn
+
+Correlation & survey analysis
+
+NLP-based sentiment scoring with VADER
+
+Communicating actionable insights
+
+🚀 How to Run
+
+Clone this repository:
+
+git clone https://github.com/<your-username>/college-event-feedback-analysis.git
+
+
+Open the notebook in Google Colab or Jupyter.
+
+Upload the dataset (student_feedback.csv).
+
+Run all cells to reproduce the analysis and charts.
